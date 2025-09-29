@@ -475,7 +475,7 @@ main {
 /*-----------------------------------*\
   #NAVBAR
 \*-----------------------------------*/
-
+/* 🌐 Base styles (Desktops/Laptops) */
 .navbar {
   position: fixed;
   bottom: 0;
@@ -511,6 +511,46 @@ main {
 
 .navbar-link.active {
   color: var(--orange-yellow-crayola);
+}
+
+/* 📱 Small devices (Phones < 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px 0;
+  }
+
+  .navbar-list {
+    justify-content: space-around;
+  }
+
+  .navbar-link {
+    font-size: 1.1rem; /* bigger text */
+    padding: 18px 14px; /* larger tap area */
+  }
+}
+
+/* 📲 Medium devices (Tablets 481px–1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .navbar {
+    padding: 6px 0;
+  }
+
+  .navbar-list {
+    justify-content: space-evenly;
+  }
+
+  .navbar-link {
+    font-size: 0.95rem; /* slightly bigger than desktop */
+    padding: 16px 12px;
+  }
+}
+
+/* 💻 Large devices (Desktops > 1024px) */
+@media (min-width: 1025px) {
+  .navbar-link {
+    font-size: var(--fs-8); /* default small font */
+    padding: 20px 7px; /* as before */
+  }
 }
 
 /*-----------------------------------*\
