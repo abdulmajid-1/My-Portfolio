@@ -525,7 +525,7 @@ main {
 
   .navbar-link {
     font-size: 1.1rem; /* bigger text */
-    padding: 18px 14px; /* larger tap area */
+    padding: 10px 5px; /* larger tap area */
   }
 }
 
